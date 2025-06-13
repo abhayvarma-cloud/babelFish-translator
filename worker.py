@@ -87,8 +87,8 @@ def text_to_speech(text, voice=""):
 
 def watsonx_process_message(user_message):
     # Set the prompt for Watsonx API
-    prompt = f"""You are an assistant helping translate sentences from English into Hindi.
-    Translate the query to Hindi: ```{user_message}```."""
+    prompt = f"""You are an assistant helping translate sentences from English into Spanish.
+    Translate the query to Spanish: ```{user_message}```."""
     response_text = model.generate_text(prompt=prompt)
     print("wastonx response:", response_text)
     return response_text

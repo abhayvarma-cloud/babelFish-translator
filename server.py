@@ -57,7 +57,7 @@ def process_message_route():
         status=200,
         mimetype='application/json'
     )
-
+    print(watsonx_response_speech +"watsonx_response_speech")
     print(response)
     return response
 
